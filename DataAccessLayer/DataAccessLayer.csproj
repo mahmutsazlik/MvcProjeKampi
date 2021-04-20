@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Concrete\Context.cs" />
+    <Compile Include="Concrete\Repositories\CategoryRepository.cs" />
     <Compile Include="Migrations\202104181533127_mig_pass_lenght.cs" />
     <Compile Include="Migrations\202104181533127_mig_pass_lenght.designer.cs">
       <DependentUpon>202104181533127_mig_pass_lenght.cs</DependentUpon>
