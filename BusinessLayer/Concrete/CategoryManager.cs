@@ -17,11 +17,11 @@ namespace BusinessLayer.Concrete
         }
         public void CategoryAddBLL(Category p)
         {
-            //if (p == null || p.CategoryName == null || p.CategoryDescription == null || p.CategoryName == string.Empty || p.CategoryName.Length <= 3 || p.CategoryDescription == string.Empty || p.CategoryName.Length > 50)
-            //{
-            //    //hata mesajı
-            //}
-            //else
+            if (p == null || p.CategoryName == null || p.CategoryDescription == null || p.CategoryName == string.Empty || p.CategoryName.Length <= 3 || p.CategoryDescription == string.Empty || p.CategoryName.Length > 50)
+            {
+                //hata mesajı
+            }
+            else
             {
                 repo.Insert(p);
             }
