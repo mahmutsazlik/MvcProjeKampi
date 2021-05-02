@@ -21,6 +21,12 @@ namespace MvcProjeKampi.Controllers
             var categoryValues = cm.GetAllBLL();
             return View(categoryValues);
         }
+        [HttpGet]
+        public ActionResult AddCategory()
+        {
+            return View();
+        }
+        [HttpPost]
         public ActionResult AddCategory(Category p)
         {
             cm.CategoryAddBLL(p);
